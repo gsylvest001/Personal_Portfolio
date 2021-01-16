@@ -1,0 +1,282 @@
+.mainContent {
+    height: 100vh;
+    background-color: #1f253d;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill {
+    width: 7vw;
+    height: 7vw;
+    line-height: 7vw;
+    border-radius: 50%;
+    font-size: 1vw;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #1f253d;
+    text-align: center;
+    background: #ffffff;
+}
+
+.course {
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 20px;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+    background: #000000;
+}
+
+.skillrow {
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.mainContent2 {
+    display: flex;
+    height: 100vh;
+    background-color: pink;
+    justify-content: 'center';
+    align-items: 'center';
+}
+
+.headingText {
+    color: #ffffff;
+    font-size: 2.5vw;
+}
+.nameText {
+    font-size: 3.2vw;
+    color: #ffffff;
+}
+
+.subText {
+    margin-top: 2rem;
+    font-size: 1.2vw;
+    color: #ffffff;
+}
+
+.leftColumn {
+    flex-direction: 'column';
+    margin-left: 50px;
+    margin-top: 15vh;
+}
+
+.rightColumn {
+    flex-direction: 'column';
+    margin-left: 10vw;
+    margin-top: 15vh;
+}
+
+.resumeButton {
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.2vw;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.resumeButton:hover {
+    background-color: #05ad83;
+}
+
+.gitHubLogo {
+    width: 7vw;
+    height: 7vw;
+}
+
+.linkedInLogo {
+    width: 7vw;
+    height: 7vw;
+}
+
+.projectsSection {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-around;
+
+}
+
+.projectTitle {
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+.projectDetails {
+    position: relative;
+    width: 80%;
+    height: 40vh;
+}
+
+.schoolDescription {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 2.5vw;
+}
+
+.educationDescription {
+    font-size: 1.5vw;
+    margin-left: 20px;
+    font-style: italic;
+    margin-bottom: 0
+}
+
+.gpaDescription {
+    margin-left: 30px;
+    font-size: 1.3vw;
+}
+
+.educationQuote {
+    font-family: 'italics'; 
+    text-align: 'center'; 
+    font-size: 1.8vw; 
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .mainContent {
+        height: 100vh;
+        background-color: #1f253d;
+        display: 'flex';
+        flex-direction: column;
+    }
+
+    .leftColumn {
+        flex-direction: 'column';
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+    .headingText {
+        color: #ffffff;
+        font-size: 3vw;
+    }
+    .nameText {
+        font-size: 4vw;
+        color: #ffffff;
+    }
+    
+    .subText {
+        margin-top: 2rem;
+        font-size: 1.5vw;
+        color: #ffffff;
+    }    
+
+    .rightColumn {
+        flex-direction: 'column';
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .gitHubLogo {
+        width: 9vw;
+        height: 9vw;
+    }
+    
+    .linkedInLogo {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .skill {
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+        border-radius: 50%;
+        font-size: 1.2vw;
+        font-weight: bold;
+        margin-right: 20px;
+        color: #1f253d;
+        text-align: center;
+        background: #ffffff;
+    }
+
+    .projectDetails {
+      width: 35%; 
+      height: 20vh;
+    }
+
+    .projectsSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .courseName {
+        font-size: 2vw;
+    }
+
+    .schoolDescription {
+        font-size: 3.5vw
+    }
+
+    .educationDescription {
+        font-size: 2vw;
+        margin-left: 20px;
+        font-style: 'italic';
+        margin-bottom: 20px;
+    }
+
+    .gpaDescription {
+        margin-left: 30px;
+        font-size: 2vw;
+    }
+
+    .educationQuote {
+        font-family: 'italics'; 
+        text-align: 'center'; 
+        font-size: 2.5vw; 
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+
+}
+
+.projectImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.projectImageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    cursor: pointer;
+}
+
+.projectImageOverlay:hover {
+    opacity: 1;
+}
+
+.projectImageDescription {
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.5vw;
+}
+
+.projectImageOverlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.projectImageOverlay:hover > * {
+    transform: translateY(0);
+}
